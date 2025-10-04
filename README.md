@@ -129,7 +129,7 @@ It reflects a strong foundation in **data analytics, storytelling, and technical
 If you’re looking for a data-driven problem solver who can turn complex datasets into actionable stories, let’s connect:  
 
 - **Name:** Opeyemi Ayodeji  
-- **LinkedIn:** [linkedin.com/in/opeyemi-ayodeji-86a696b0] (https://www.linkedin.com/in/opeyemi-ayodeji-86a696b0/)  
+- **LinkedIn:** (https://www.linkedin.com/in/opeyemi-ayodeji-86a696b0/)  
 - **Email:** sopeyemi65@gmail.com  
 
 ---
