@@ -70,7 +70,8 @@ The goal is to convert raw retail transactions into **business-ready insights** 
 
 ## 🧾 Deliverables  
 
-👉 **[View SQL Script →]** (https://docs.google.com/document/d/11ISyCUJeoHXg040KPNROeu0bE5cXI-lnCEbpcSzLh4I/edit?usp=sharing)  
+👉 **[View SQL Script →]** (https://docs.google.com/document/d/11ISyCUJeoHXg040KPNROeu0bE5cXI-lnCEbpcSzLh4I/edit?usp=sharing)
+
 👉 **[View Interactive Power BI Dashboard →]** (https://app.powerbi.com/view?r=eyJrIjoiYzdjZjM4OGYtNzlmOS00ODdkLWI1YjMtZmRiNGM4NzViNzRjIiwidCI6ImRkYjk1YzMwLWU3OWUtNDdiNy05YTVmLWE0MmNkZDljOTk5ZCJ9)  
 
 The dashboard provides:  
