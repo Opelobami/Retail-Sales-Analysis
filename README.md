@@ -70,7 +70,74 @@ The goal is to convert raw retail transactions into **business-ready insights** 
 
 ## 🧾 Deliverables  
 
-👉 **[View SQL Script →]** (https://docs.google.com/document/d/11ISyCUJeoHXg040KPNROeu0bE5cXI-lnCEbpcSzLh4I/edit?usp=sharing)
+👉 **[SQL Script →]**
+
+```
+ --1. Write a SQL query to retrieve all columns for sales made on '2022-11-05'
+ SELECT*
+ FROM [Retail Sales Analysis]
+ WHERE sale_date = '2022-11-05';
+
+ --2. Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022 
+ SELECT*
+ FROM [Retail Sales Analysis]
+ WHERE sale_date IN ('2022-11-01','2022-11-30')
+ AND category ='Clothing' AND quantiy > 4;
+
+ --3. Write a SQL query to calculate the total sales (total_sale) for each category
+ SELECT DISTINCT category, SUM(total_sale) AS TotalSale
+ FROM [Retail Sales Analysis]
+ GROUP BY category
+ ORDER BY TotalSale DESC;
+
+ --4. Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category
+ SELECT AVG(age) AS Customers_Avg_Age
+ FROM [Retail Sales Analysis]
+ WHERE category = 'Beauty'
+
+--5. Write a SQL query to find all transactions where the total_sale is greater than 1000
+ SELECT*
+ FROM [Retail Sales Analysis]
+ WHERE total_sale > 1000
+
+ --6. Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category
+ SELECT category, gender, COUNT(transactions_id) AS total_transaction 
+ FROM [Retail Sales Analysis]
+ GROUP BY category, gender
+ ORDER BY total_transaction DESC;
+
+--7. Write a SQL query to calculate the average sale for each month. Find out best-selling month in each year .
+ SELECT YEAR(sale_date) AS Sales_Year, MONTH(sale_date) AS Sales_Month, AVG(total_sale) AS Avg_monthly_sales
+ FROM [Retail Sales Analysis]
+ GROUP BY YEAR(sale_date), MONTH(sale_date)
+ ORDER BY Sales_Year, Sales_Month, Avg_monthly_sales;
+
+--8. Write a SQL query to find the top 5 customers based on the highest total sales.
+ SELECT Top 5 customer_id,  SUM(total_sale) AS Highest_Sales
+ FROM [Retail Sales Analysis]
+ GROUP BY customer_id
+ ORDER BY Highest_Sales DESC;
+
+--9. Write a SQL query to find the number of unique customers who purchased items from each category.
+ SELECT category, COUNT(DISTINCT customer_id) AS Customers
+ FROM [Retail Sales Analysis]
+ GROUP BY category
+ ORDER BY Customers DESC;
+
+--10. Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17) 
+ SELECT CASE 
+ WHEN DATEPART(HOUR, sale_time) < 12 THEN 'Morning'
+ WHEN DATEPART(HOUR, sale_time) BETWEEN 12 AND 17 THEN 'Afternoon'
+ ELSE 'Evening'
+ END AS Shift,
+ COUNT(*) AS Number_of_Orders
+ FROM [Retail Sales Analysis]
+ GROUP BY CASE 
+ WHEN DATEPART(HOUR, sale_time) < 12 THEN 'Morning'
+ WHEN DATEPART(HOUR, sale_time) BETWEEN 12 AND 17 THEN 'Afternoon'
+ ELSE 'Evening'
+ END;
+```
 
 👉 **[View Interactive Power BI Dashboard →]** (https://app.powerbi.com/view?r=eyJrIjoiYzdjZjM4OGYtNzlmOS00ODdkLWI1YjMtZmRiNGM4NzViNzRjIiwidCI6ImRkYjk1YzMwLWU3OWUtNDdiNy05YTVmLWE0MmNkZDljOTk5ZCJ9)  
 
