@@ -72,7 +72,7 @@ The goal is to convert raw retail transactions into **business-ready insights** 
 
 👉 **[SQL Script →]**
 
-```
+```sql
  --1. Write a SQL query to retrieve all columns for sales made on '2022-11-05'
  SELECT*
  FROM [Retail Sales Analysis]
@@ -138,6 +138,8 @@ The goal is to convert raw retail transactions into **business-ready insights** 
  ELSE 'Evening'
  END;
 ```
+
+---
 
 👉 **[View Interactive Power BI Dashboard →]** (https://app.powerbi.com/view?r=eyJrIjoiYzdjZjM4OGYtNzlmOS00ODdkLWI1YjMtZmRiNGM4NzViNzRjIiwidCI6ImRkYjk1YzMwLWU3OWUtNDdiNy05YTVmLWE0MmNkZDljOTk5ZCJ9)  
 
