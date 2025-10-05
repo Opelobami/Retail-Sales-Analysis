@@ -57,20 +57,7 @@ The goal is to convert raw retail transactions into **business-ready insights** 
 
 ---
 
-## 💡 Key Insights  
-
-- 💰 **₦908K Total Sales** generated across all categories  
-- 🌆 **53.45%** of orders occurred in the evening  
-- 👥 **Average customer age:** 41.35 years  
-- 🧍‍♂️ **Top Customer:** ID 3 with ₦38K in purchases  
-- 🖥️ **Electronics** sales outperform **Clothing** by 0.3% and **Beauty** by 8.4%  
-- 📅 **2023 outperformed 2022** in total sales (₦459K vs ₦449K) and customer count (1,021 vs 966)
-
----
-
-## 🧾 Deliverables  
-
-👉 **[SQL Script →]**
+## 🧩SQL Queries 
 
 ```sql
  --1. Write a SQL query to retrieve all columns for sales made on '2022-11-05'
@@ -139,9 +126,20 @@ The goal is to convert raw retail transactions into **business-ready insights** 
  END;
 ```
 
+👉 **[View Interactive Power BI Dashboard →]** (https://app.powerbi.com/view?r=eyJrIjoiYzdjZjM4OGYtNzlmOS00ODdkLWI1YjMtZmRiNGM4NzViNzRjIiwidCI6ImRkYjk1YzMwLWU3OWUtNDdiNy05YTVmLWE0MmNkZDljOTk5ZCJ9)  
+
 ---
 
-👉 **[View Interactive Power BI Dashboard →]** (https://app.powerbi.com/view?r=eyJrIjoiYzdjZjM4OGYtNzlmOS00ODdkLWI1YjMtZmRiNGM4NzViNzRjIiwidCI6ImRkYjk1YzMwLWU3OWUtNDdiNy05YTVmLWE0MmNkZDljOTk5ZCJ9)  
+## 💡 Key Insights  
+
+- 💰 **₦908K Total Sales** generated across all categories  
+- 🌆 **53.45%** of orders occurred in the evening  
+- 👥 **Average customer age:** 41.35 years  
+- 🧍‍♂️ **Top Customer:** ID 3 with ₦38K in purchases  
+- 🖥️ **Electronics** sales outperform **Clothing** by 0.3% and **Beauty** by 8.4%  
+- 📅 **2023 outperformed 2022** in total sales (₦459K vs ₦449K) and customer count (1,021 vs 966)
+
+---
 
 The dashboard provides:  
 - Real-time tracking of **sales performance and customer engagement**  
